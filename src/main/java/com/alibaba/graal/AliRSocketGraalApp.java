@@ -1,7 +1,6 @@
 package com.alibaba.graal;
 
 import com.alibaba.rsocket.invocation.RSocketRemoteServiceBuilder;
-import com.alibaba.rsocket.metadata.RSocketMimeType;
 import com.alibaba.rsocket.upstream.UpstreamManager;
 import com.alibaba.user.UserService;
 import org.springframework.boot.SpringApplication;
@@ -20,8 +19,7 @@ public class AliRSocketGraalApp {
         return RSocketRemoteServiceBuilder
                 .client(UserService.class)
                 .upstreamManager(upstreamManager)
-                .encodingType(RSocketMimeType.Json)
-                .acceptEncodingType(RSocketMimeType.Json)
+                .nativeImage()
                 .build();
     }
 }
