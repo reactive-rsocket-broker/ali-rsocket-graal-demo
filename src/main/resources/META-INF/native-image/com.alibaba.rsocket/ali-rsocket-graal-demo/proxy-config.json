@@ -1,4 +1,3 @@
 [
-  ["com.alibaba.rsocket.health.RSocketServiceHealth"],
   ["com.alibaba.user.UserService"]
 ]
