@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.alibaba.rsocket</groupId>
             <artifactId>alibaba-rsocket-spring-boot-starter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0.RC4</version>
             <exclusions>
                 <exclusion>
                     <groupId>io.netty</groupId>
