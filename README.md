@@ -59,4 +59,4 @@ $ upx -7 -k target/ali-rsocket-graal-demo
 * GraalVM: https://www.graalvm.org/
 * Alibaba RSocket Broker: https://github.com/alibaba/alibaba-rsocket-broker
 * upx: the Ultimate Packer for eXecutables https://github.com/upx/upx
-* Spring Native for GraalVM documentation: https://repo.spring.io/milestone/org/springframework/experimental/spring-graalvm-native-docs/0.8.5/spring-graalvm-native-docs-0.8.5.zip!/reference/index.html#_overview
+* Spring Native documentation: https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/
