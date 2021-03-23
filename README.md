@@ -10,7 +10,7 @@ Alibaba Socket GraalVM native-image demo
 ```
 $ # switch to GraalVM 21.0.0
 $ mvn -Pnative -DskipTests clean package
-$ ./target/rsocket-graal-demo
+$ ./target/ali-rsocket-graal-demo
 $ # open a new tab
 $ curl http://localhost:8183/user/1
 ```
