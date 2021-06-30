@@ -136,7 +136,7 @@
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
-                        <version>0.9.0</version>
+                        <version>0.9.1</version>
                         <configuration>
                             <mainClass>${start-class}</mainClass>
                             <imageName>${build.finalName}</imageName>
