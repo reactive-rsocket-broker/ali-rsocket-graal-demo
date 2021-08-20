@@ -14,8 +14,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <graalvm.version>21.2.0</graalvm.version>
-        <spring-boot.version>2.5.3</spring-boot.version>
-        <spring-native.version>0.10.2</spring-native.version>
+        <spring-boot.version>2.5.4</spring-boot.version>
+        <spring-native.version>0.10.3</spring-native.version>
         <start-class>com.alibaba.graal.AliRSocketGraalApp</start-class>
     </properties>
 
