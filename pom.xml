@@ -14,8 +14,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <graalvm.version>22.0.0</graalvm.version>
-        <spring-boot.version>2.6.3</spring-boot.version>
-        <spring-native.version>0.11.2</spring-native.version>
+        <spring-boot.version>2.6.4</spring-boot.version>
+        <spring-native.version>0.11.3</spring-native.version>
         <start-class>com.alibaba.graal.AliRSocketGraalApp</start-class>
     </properties>
 
@@ -51,7 +51,7 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-bom</artifactId>
-                <version>4.1.73.Final</version>
+                <version>4.1.74.Final</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -134,7 +134,7 @@
                     <plugin>
                         <groupId>org.graalvm.buildtools</groupId>
                         <artifactId>native-maven-plugin</artifactId>
-                        <version>0.9.9</version>
+                        <version>0.9.10</version>
                         <configuration>
                             <mainClass>${start-class}</mainClass>
                             <imageName>${build.finalName}</imageName>
