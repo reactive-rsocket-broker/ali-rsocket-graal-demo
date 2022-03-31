@@ -1,5 +1,6 @@
 package com.alibaba.user;
 
+import com.alibaba.rsocket.RSocketServiceInterface;
 import reactor.core.publisher.Mono;
 
 /**
@@ -7,6 +8,7 @@ import reactor.core.publisher.Mono;
  *
  * @author leijuan
  */
+@RSocketServiceInterface
 public interface UserService {
 
     /**
