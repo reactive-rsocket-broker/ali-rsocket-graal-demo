@@ -3,12 +3,12 @@ Alibaba Socket GraalVM native-image demo
 
 # Requirements
 
-* GraalVM 21.0.0 with native-image installed  https://www.graalvm.org/downloads/
+* GraalVM 22.2.0 with native-image installed  https://www.graalvm.org/downloads/
 
 # How to run
 
 ```
-$ # switch to GraalVM 21.0.0
+$ # switch to GraalVM 22.2.0
 $ mvn -Pnative -DskipTests clean package
 $ ./target/ali-rsocket-graal-demo
 $ # open a new tab
