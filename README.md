@@ -1,14 +1,18 @@
 Alibaba Socket GraalVM native-image demo
 ========================================
 
+This demo shows how to use Alibaba RSocket Broker with GraalVM native-image and Spring Boot 2.7.x.
+
+If you want to use Spring Boot 3, please refer https://github.com/alibaba-rsocket-broker/ali-rsocket-graal-boot3-demo
+
 # Requirements
 
-* GraalVM 22.2.0 with native-image installed  https://www.graalvm.org/downloads/
+* GraalVM 22.3.0 with native-image installed  https://www.graalvm.org/downloads/
 
 # How to run
 
 ```
-$ # switch to GraalVM 22.2.0
+$ # switch to GraalVM 22.3.0
 $ mvn -Pnative -DskipTests clean package
 $ ./target/ali-rsocket-graal-demo
 $ # open a new tab
@@ -17,7 +21,8 @@ $ curl http://localhost:8183/user/1
 
 # Native assist
 
-For details, please refer: https://www.graalvm.org/reference-manual/native-image/BuildConfiguration/#assisted-configuration-of-native-image-builds
+For details, please
+refer: https://www.graalvm.org/reference-manual/native-image/BuildConfiguration/#assisted-configuration-of-native-image-builds
 
 ### How to run app with native-image-agent mode?
 
@@ -38,7 +43,8 @@ $ upx -7 -k target/ali-rsocket-graal-demo
 
 # GraalVM Native Image guide
 
-* If you want to access remote RSocket Service, please add interface full name to `proxy-config.json`, then add `.nativeImage()`  to create service call stub.
+* If you want to access remote RSocket Service, please add interface full name to `proxy-config.json`, then
+  add `.nativeImage()`  to create service call stub.
 
 ```
     @Bean
